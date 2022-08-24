@@ -10,7 +10,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: Raleway, "yu Gothic", Meiryo, sans-serif;
+  font-family: 'Yu mincho';
   margin: 0;
 }
 
@@ -62,7 +62,6 @@ body {
 
 @media (max-width: 768px) {
   .header_wrapper {
-    /* box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); */
     padding: 16px;
     border-bottom: 1px solid #979797;
   }
@@ -325,8 +324,8 @@ body {
   text-align: center;
   transition: all 0.2s linear;
   font-weight: bold;
-  background: #fff;
-  color: #932F3C;
+  background: #932F3C;
+  color: #fff;
   text-decoration: none;
   border: 2px solid #932F3C;
   outline: none;
@@ -336,7 +335,7 @@ body {
 .button_arrow:hover {
   opacity: 0.99;
   transition: 0.15s;
-  color: #fff;
+  color: #932F3C;
 }
 
 .button_arrow::after {
@@ -347,13 +346,13 @@ body {
   border: 4px solid transparent;
   border-top-width: 4px;
   border-bottom-width: 4px;
-  border-left-color: #932F3C;
+  border-left-color: #fff;
   transition: all 0.2s linear;
 }
 
 .button_arrow:hover::after {
   right: 20px;
-  border-left-color: #fff;
+  border-left-color: #932F3C;
 }
 
 .wrapper_button {
@@ -370,12 +369,17 @@ body {
   z-index: -1;
   height: 100%;
   width: 0;
-  background: #932F3C;
+  background: #fff;
   transition: all .3s;
 }
 
 .button_arrow:hover::before {
   width: 100%;
+}
+
+.button_arrow i {
+  margin-right: 8px;
+  font-size: 1.4rem;
 }
 
 /* --------------------------------
@@ -387,7 +391,6 @@ body {
 
 .catalog_wrapper {
   max-width: 960px;
-  /* background-color: red;  */
   margin: 0 auto 96px;
   padding: 48px 0;
 }
@@ -411,9 +414,7 @@ body {
  * concept
  * -------------------------------- */
 .concept {
-  font-family: 'Yu mincho';
   max-width: 960px;
-  /* background-color: red;  */
   margin: 0 auto 96px;
   padding: 100px 0 0;
 }
@@ -431,7 +432,6 @@ body {
   width: 50%;
   float: right;
   padding: 36px;
-  /* background-color: #0168B7; */
 }
 
 @media (max-width: 768px) {
@@ -460,7 +460,6 @@ body {
  * menu
  * -------------------------------- */
 .menu {
-  font-family: 'Yu mincho';
   max-width: 960px;
   margin: 0 auto 96px;
   padding: 24px 0 64px;
@@ -480,6 +479,7 @@ body {
 
 .menu .title {
   font-family: 'Adamina', serif;
+  letter-spacing: 0.5rem;
   background-color: #303030;
   padding: 8px;
   text-align: center;
@@ -507,7 +507,6 @@ body {
 .menu .menu_left {
   width: 49%;
   float: left;
-  /* background-color: #0168B7; */
 }
 
 .menu .menu_left img {
@@ -517,7 +516,6 @@ body {
 .menu .menu_right {
   width: 49%;
   float: right;
-  /* background-color: #ef6c00; */
 }
 
 @media (max-width: 768px) {
@@ -571,10 +569,6 @@ body {
     width: 100%;
     height: 300px;
   }
-}
-
-.access_wrapper {
-  /* background-color: #c9b290; */
 }
 
 .access .title {
@@ -635,11 +629,15 @@ body {
   background: url(../img/recruit_back.png) center center / cover no-repeat;
   padding: 36px;
   color: #fff;
-  font-family: 'Yu mincho';
 }
 
 .recruit .heading {
   color: #fff;
+}
+
+.recruit .tel {
+  margin-top: 24px;
+  font-size: 2.0rem;
 }
 
 .recruit .heading:before,
@@ -663,13 +661,12 @@ body {
 footer {
   margin: 0;
   padding: 8px 0;
-  background-color: #6d101c;
+  background-color: #333;
 }
 
 footer p {
   font-size: 1.4rem;
   display: block;
-  vertical-align: middle;
   margin: 0;
   text-align: center;
   color: #fff;
