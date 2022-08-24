@@ -330,6 +330,7 @@ body {
   border: 2px solid #932F3C;
   outline: none;
   letter-spacing: 0.2rem;
+  font-family: 'Adamina', serif;
 }
 
 .button_arrow:hover {
