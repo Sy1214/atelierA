@@ -1,5 +1,3 @@
-
-
 $(function () {
 	$('.autoplay').slick({
 		autoplay: true,
