@@ -29,6 +29,7 @@ body {
 @media (max-width: 768px) {
   body {
     font-size: 1.3rem;
+    font-family: 'Yu mincho';
   }
 }
 
@@ -116,15 +117,15 @@ body {
 }
 
 #menu_toggle span:nth-of-type(1) {
-  top: 12px;
-}
-
-#menu_toggle span:nth-of-type(2) {
   top: 18px;
 }
 
-#menu_toggle span:nth-of-type(3) {
+#menu_toggle span:nth-of-type(2) {
   top: 24px;
+}
+
+#menu_toggle span:nth-of-type(3) {
+  top: 30px;
 }
 
 .menu_active span:nth-of-type(1) {
@@ -311,6 +312,16 @@ body {
 
 .heading:after {
   right: 0;
+}
+
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2.4rem;
+    letter-spacing: 0.4rem;
+    line-height: 3rem;
+    width: 300px;
+  }
 }
 
 /* --------------------------------
@@ -537,6 +548,7 @@ body {
  * reserve
  * -------------------------------- */
 .reserve {
+  font-family: 'Yu mincho';
   background-color: #F4F2EF;
   padding: 36px;
 }
